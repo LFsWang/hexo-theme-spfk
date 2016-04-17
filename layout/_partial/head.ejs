@@ -2,6 +2,17 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <link rel="canonical" href="<%=config.url%>" />
+  <script>
+  var getLocation = function(href) {
+    var l = document.createElement("a");
+    l.href = href;
+    return l;
+  };
+  var host = getLocation("<%=config.url%>").hostname;
+  if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+  </script>
   <%
   var title = page.title;
 
