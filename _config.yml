@@ -86,7 +86,7 @@ background:
   on: true
   #on: false
   background_sum: 24
-  background_image: 109
+  background_image: 9
 
 highlight_style:
   #on: true
