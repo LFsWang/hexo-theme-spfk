@@ -1,4 +1,12 @@
-<%- js('https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min') %>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js"></script>
+<script>
+requirejs.config({
+    "baseUrl": "/",
+    "paths": {
+      "jquery": "//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min"
+    }
+});
+</script>
 <%- js('js/main') %>
 <%- partial('_partial/background') %>
 <%- partial('analytics/google-analytics') %>
